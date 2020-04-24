@@ -1,0 +1,9 @@
+{ 
+    "name": "Sarcasm Text",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Allows users to quickly convert regular text to a sarcastic format",
+    "browser_Action": {
+        "default_popup": "src/popup.html"
+    }
+}
