@@ -1,6 +1,6 @@
 // script that converts the text into a sarcastic format
 function main(str) {
-    const temp = str.split("").map(x => {
+    const temp = str.toLowerCase().split("").map(x => {
         let num = Math.random();
         if(num > 0.4) {
             return x.toUpperCase();  
@@ -12,18 +12,15 @@ function main(str) {
 }
 
 function convert() {
-    const text = document.querySelector("#input").value;
+    const text = document.querySelector("#input");
     const output = document.querySelector("#output");
-    console.log(text);
-    output.innerHTML = main(text);
+    text.value = main(text.value);
 }
 
 function copy() {
-    const output = document.querySelector("#output");
+    convert()
+    const output = document.getElementById("input");
     output.select();
-    output.setSelectRange(0,99999);
-
     document.execCommand("copy");
 }
-
-document.querySelector("#convert").addEventListener("click", convert())
+document.querySelector("#copy").onclick = function(){copy()};

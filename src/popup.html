@@ -3,22 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="popup.js"></script>
+        <link href="style.css" type="text/css" rel="stylesheet" />
         <title>Sponge Mock</title>
     </head>
     <body>
-        <textarea id="input"></textarea>
-        <div id="output">
-            <p></p>
+        <textarea id="input" rows="10" cols="50"></textarea>
+        <div id="buttons">
+            <!-- <button id="convert" onclick="convert()">Convert</button> -->
+            <button id="copy" onclick="copy()">Copy</button>
         </div>
-        <button id="covert" onclick="convert()">Convert</button>
-        <button onclick="copy()">copy</button>
     </body>
-<style>
-    
-</style>
-    <script>
-        console.log("This works");
-    </script>
-
+<script src="popup.js"></script>
 </html>
