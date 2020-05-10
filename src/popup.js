@@ -23,4 +23,7 @@ function copy() {
     output.select();
     document.execCommand("copy");
 }
-document.querySelector("#copy").onclick = function(){copy()};
+// document.querySelector("#copy").onclick = function(){copy()};
+
+
+console.log(main("The quick brown fox jumps over the lazy dog"));
